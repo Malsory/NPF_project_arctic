@@ -1,0 +1,11 @@
+Accuracies:  [0.26956522 0.2173913  0.37391304 0.46956522 0.28070175 0.44736842
+ 0.42105263 0.25438596 0.24561404 0.29824561]
+Average Accuracy: 0.3277803203661327
+Stdev Accuracy:  0.09191401549792372
+Average Precision: 0.5194735962290908
+Average Recall: 0.3277803203661327
+Average Roc_auc score: nan
+Average F1 score: 0.3751812835583017
+Average non-NPF recall: 0.0
+Average NPF recall: 0.0
+Average Undefined recall: 0.0

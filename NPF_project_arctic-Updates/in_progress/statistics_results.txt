@@ -1,0 +1,31 @@
+Avg temperature during NPF days: -1.4198006028286576
+Avg temperature during non-NPF days: -6.688242764248374
+Avg temperature during Undefined days: -5.861520208205757
+-----------------------------------------------------------------------------------
+Avg pressure during NPF days: 952.4607620372517
+Avg pressure during non-NPF days: 948.7929603680566
+Avg pressure during Undefined days: 948.6895680240865
+-----------------------------------------------------------------------------------
+Avg RH during NPF days: 85.46824232939176
+Avg RH during non-NPF days: 78.08102479918398
+Avg RH during Undefined days: 78.55628444580526
+-----------------------------------------------------------------------------------
+Avg SRAD during NPF days: 148.8895565885521
+Avg SRAD during non-NPF days: 48.87332434651671
+Avg SRAD during Undefined days: 55.09534975375126
+-----------------------------------------------------------------------------------
+Avg SO2 during NPF days: 0.0543165003876652
+Avg SO2 during non-NPF days: 0.07072191050451614
+Avg SO2 during Undefined days: 0.04231413735915494
+-----------------------------------------------------------------------------------
+Avg SO4 during NPF days: 0.06996986430396475
+Avg SO4 during non-NPF days: 0.09192470934838708
+Avg SO4 during Undefined days: 0.09192470934838708
+-----------------------------------------------------------------------------------
+Avg NH3 during NPF days: 0.20627537514977973
+Avg NH3 during non-NPF days: 0.20236118491354835
+Avg NH3 during Undefined days: 0.20236118491354835
+-----------------------------------------------------------------------------------
+Avg NH4 during NPF days: 0.03798698519823788
+Avg NH4 during non-NPF days: 0.049956680729032255
+Avg NH4 during Undefined days: 0.049956680729032255

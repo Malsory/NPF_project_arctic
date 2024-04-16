@@ -1,0 +1,15 @@
+Accuracies:  [0.70434783 0.71304348 0.69565217 0.65217391 0.6754386  0.75438596
+ 0.74561404 0.62280702 0.64035088 0.68421053]
+Average Accuracy: 0.6888024408848208
+Stdev Accuracy:  0.04301064285704865
+Average Precision: 0.6589985532607284
+Average Recall: 0.6888024408848208
+Feature Importance:
+       Feature  Importance
+4          SWD    0.197071
+0         date    0.164564
+3  temperature    0.144240
+1     pressure    0.130100
+2           RH    0.128960
+5          NH3    0.124322
+6          SO4    0.110745

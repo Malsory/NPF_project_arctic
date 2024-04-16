@@ -1,0 +1,100 @@
+Column: adbc_regular
+Highest Value: 0.6783
+Lowest Value: 0.5478
+Average Value: 0.6250
+
+Column: adbc_tuned
+Highest Value: 0.6783
+Lowest Value: 0.5478
+Average Value: 0.6250
+
+Column: ensemble_regular_rfc_adbc
+Highest Value: 0.7826
+Lowest Value: 0.6522
+Average Value: 0.7124
+
+Column: ensemble_regular_rfc_xgbc
+Highest Value: 0.7456
+Lowest Value: 0.6348
+Average Value: 0.6958
+
+Column: ensemble_tuned_rfc_adbc
+Highest Value: 0.7739
+Lowest Value: 0.6579
+Average Value: 0.7098
+
+Column: ensemble_tuned_rfc_xgbc
+Highest Value: 0.7565
+Lowest Value: 0.6053
+Average Value: 0.6949
+
+Column: gbm_regular
+Highest Value: 0.7368
+Lowest Value: 0.6228
+Average Value: 0.6862
+
+Column: gbm_tuned
+Highest Value: 0.7652
+Lowest Value: 0.5877
+Average Value: 0.6984
+
+Column: k_means
+Highest Value: 0.5439
+Lowest Value: 0.1316
+Average Value: 0.3460
+
+Column: knn
+Highest Value: 0.7632
+Lowest Value: 0.6053
+Average Value: 0.6888
+
+Column: lrc_regular
+Highest Value: 0.7826
+Lowest Value: 0.6140
+Average Value: 0.7054
+
+Column: lrc_tuned
+Highest Value: 0.7826
+Lowest Value: 0.6140
+Average Value: 0.7045
+
+Column: mlpc_tuned
+Highest Value: 0.8000
+Lowest Value: 0.6087
+Average Value: 0.6932
+
+Column: naive_bayes
+Highest Value: 0.7544
+Lowest Value: 0.5526
+Average Value: 0.6800
+
+Column: rfc_regular
+Highest Value: 0.7652
+Lowest Value: 0.6491
+Average Value: 0.7028
+
+Column: rfc_tuned
+Highest Value: 0.7652
+Lowest Value: 0.6053
+Average Value: 0.6984
+
+Column: svc_regular
+Highest Value: 0.7807
+Lowest Value: 0.5526
+Average Value: 0.6958
+
+Column: svc_tuned
+Highest Value: 0.7807
+Lowest Value: 0.5526
+Average Value: 0.6958
+
+Column: xgbc_regular
+Highest Value: 0.7193
+Lowest Value: 0.5789
+Average Value: 0.6661
+
+Column: xgbc_tuned
+Highest Value: 0.7193
+Lowest Value: 0.6087
+Average Value: 0.6766
+
