@@ -2,9 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\in_progress\\heatmap_accuracy.csv')
-df1 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\in_progress\\heatmap_precision.csv')
-df2 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\in_progress\\heatmap_recall.csv')
+df = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\in_progress\\heatmap_accuracy.csv')
+df1 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\in_progress\\heatmap_precision.csv')
+df2 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\in_progress\\heatmap_recall.csv')
 
 plt.figure(figsize=(10, 10))
 plt.rcParams['font.family'] = 'Times New Roman'
@@ -15,7 +15,7 @@ plt.title('Heatmap of accuracies of combinations', fontsize=15)
 plt.xlabel('Models', fontsize=15)
 plt.ylabel('Combination', fontsize=15)
 plt.xticks(fontsize=15)
-plt.savefig('C:\\Users\\Masloriy\\Desktop\\Data\\heatmap_comp_accuracy.png', dpi=300)
+plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\png\\heatmap_comp_accuracy.png', dpi=300)
 
 plt.figure(figsize=(10, 10))
 plt.rcParams['font.family'] = 'Times New Roman'
@@ -24,7 +24,7 @@ plt.title('Heatmap of precision of combinations', fontsize=15)
 plt.xlabel('Models', fontsize=15)
 plt.ylabel('Combination', fontsize=15)
 plt.xticks(fontsize=15)
-plt.savefig('C:\\Users\\Masloriy\\Desktop\\Data\\heatmap_comp_precision.png', dpi=300)
+plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\png\\heatmap_comp_precision.png', dpi=300)
 
 plt.figure(figsize=(10, 10))
 plt.rcParams['font.family'] = 'Times New Roman'
@@ -33,4 +33,4 @@ plt.title('Heatmap of recall of combinations', fontsize=15)
 plt.xlabel('Models', fontsize=15)
 plt.ylabel('Combination', fontsize=15)
 plt.xticks(fontsize=15)
-plt.savefig('C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\png\\heatmap_comp_racall.png', dpi=300)
+plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\png\\heatmap_comp_racall.png', dpi=300)
