@@ -1,6 +1,4 @@
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 data = {
     'SRAD':    0.251435,
@@ -19,4 +17,4 @@ plt.figure(figsize=(10, 10))
 plt.pie(data.values(), labels=data.keys(), autopct='%1.1f%%', startangle=140, colors=plt.cm.Pastel1.colors, textprops={'fontsize': 15})
 plt.title('Importance of parameters', fontsize=15)
 plt.axis('equal')
-plt.savefig('C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\png\\\pie_chart2.png', dpi=300)
+plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\png\\\pie_chart2.png', dpi=300)

@@ -3,7 +3,7 @@ import numpy as np
 import sys
 
 # Read dataset
-df = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\in_progress\\output_combined.csv')
+df = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\in_progress\\output_combined.csv')
 # Prep the dataset
 df = df.dropna()
 df = df.drop(df.columns[df.columns.str.contains('Unnamed')], axis=1)
@@ -42,7 +42,7 @@ average_NH3_undef = np.mean(npf_df_non_NPF['NH3'])
 average_NH4_undef = np.mean(npf_df_non_NPF['NH4'])
 
 # Redirect stdout to a file
-with open(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\in_progress\\statistics_results.txt', 'w') as file:
+with open(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\in_progress\\statistics_results.txt', 'w') as file:
     sys.stdout = file
     print('Avg temperature during NPF days:', average_temp_NPF)
     print('Avg temperature during non-NPF days:', average_temp_non)

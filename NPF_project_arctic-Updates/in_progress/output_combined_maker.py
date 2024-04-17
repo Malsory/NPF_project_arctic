@@ -3,12 +3,12 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Read files
-df1 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\raw_data\\ar_chem_2010_2021_ppb.csv')
-df2 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\raw_data\\14_NPF_date_summary.csv')
-df3 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\raw_data\\ar_aws_2015_2021.csv')
-df4 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\raw_data\\ar_srad_2013_2021.csv')
-df5 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\raw_data\\14_PM_gas.csv')
-df7 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\raw_data\\CS_pm10_pm25.csv')
+df1 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\raw_data\\ar_chem_2010_2021_ppb.csv')
+df2 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\raw_data\\14_NPF_date_summary.csv')
+df3 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\raw_data\\ar_aws_2015_2021.csv')
+df4 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\raw_data\\ar_srad_2013_2021.csv')
+df5 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\raw_data\\14_PM_gas.csv')
+df7 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\raw_data\\CS_pm10_pm25.csv')
 
 # Trim df4 by columns
 df4_selected = df4.drop(columns=["DIR", "DIF", "LWD", "SWU", "LWU", "temperature", "RH", "pressure", "net.irr"])
@@ -113,4 +113,4 @@ merged_data_new_new_new = pd.merge(merged_data_new_new, df5, how='outer', on='da
 merged_data_new_new_new_new = pd.merge(merged_data_new_new_new, df6, how='outer', on='date')
 result = merged_data_new_new_new_new
 result = result.drop(result.tail(31).index)
-result.to_csv(r'C:\\Users\\Masloriy\\Desktop\\Data\\Data_arctic\\in_progress\\output_combined.csv')
+result.to_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\in_progress\\output_combined.csv')

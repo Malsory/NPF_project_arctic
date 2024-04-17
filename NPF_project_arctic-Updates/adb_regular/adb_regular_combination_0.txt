@@ -1,17 +1,17 @@
-Accuracies:  [0.53043478 0.66956522 0.66086957 0.62608696 0.57017544 0.64912281
- 0.6754386  0.51754386 0.59649123 0.62280702]
+Accuracies:  [0.53043478, 0.66956522, 0.66086957, 0.62608696, 0.57017544, 0.64912281,
+ 0.6754386 , 0.51754386, 0.59649123, 0.62280702]
 Average Accuracy: 0.6118535469107551
 Stdev Accuracy:  0.05674918457768685
 Average Precision: 0.6167439641209075
 Average Recall: 0.6118535469107551
-Average Roc_auc score: nan
+Average Roc_auc score: 0.6074778801731788
 Average F1 score: 0.6128579662999504
 Average non-NPF recall: 0.7357691024117009
 Average NPF recall: 0.4110877259994907
 Average Undefined recall: 0.2503649291884586
 Feature Importance:
        Feature  Importance
-3          SWD    0.319752
-1           RH    0.292608
-2  temperature    0.207978
-0     pressure    0.179662
+3          SWD    0.356852
+2  temperature    0.274703
+1           RH    0.202579
+0     pressure    0.165867

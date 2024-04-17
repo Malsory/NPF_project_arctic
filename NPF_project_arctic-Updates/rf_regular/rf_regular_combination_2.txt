@@ -1,20 +1,20 @@
-Accuracies:  [0.66086957 0.73043478 0.70434783 0.68695652 0.71052632 0.77192982
- 0.75438596 0.60526316 0.68421053 0.69298246]
-Average Accuracy: 0.7001906941266209
-Stdev Accuracy:  0.047331335651667555
-Average Precision: 0.6761959724714658
-Average Recall: 0.7001906941266209
-Average Roc_auc score: nan
-Average F1 score: 0.6587644933192033
-Average non-NPF recall: 0.896769827859203
-Average NPF recall: 0.3869153297682709
-Average Undefined recall: 0.11549953314659196
+Accuracies:  [0.68695652, 0.73913043, 0.71304348, 0.64347826, 0.72807018, 0.75438596,
+ 0.74561404, 0.59649123, 0.64912281, 0.71052632]
+Average Accuracy: 0.6966819221967964
+Stdev Accuracy:  0.051850031875784366
+Average Precision: 0.6703486853589157
+Average Recall: 0.6966819221967964
+Average Roc_auc score: 0.7991637806789667
+Average F1 score: 0.6537695593245034
+Average non-NPF recall: 0.8980701804205997
+Average NPF recall: 0.37322918258212373
+Average Undefined recall: 0.10312791783380018
 Feature Importance:
        Feature  Importance
-4          SWD    0.216963
-0         date    0.169639
-3  temperature    0.153869
-2           RH    0.143059
-1     pressure    0.137495
-6          SO4    0.099732
-5          NH3    0.079243
+4          SWD    0.210141
+0         date    0.174664
+3  temperature    0.156490
+1     pressure    0.139490
+2           RH    0.137230
+6          SO4    0.093561
+5          NH3    0.088423
