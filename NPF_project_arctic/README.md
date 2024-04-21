@@ -1,5 +1,10 @@
 # NPF_project_arctic
 MSc project
 
-All the updates will be listed under this branch.
-This will be the test for pushing.
+Monday plan:
+1) Complete smote training for all models
+2) Do Randomsearch tuning for all models
+3) Fix SMPS
+
+Tuesday plan:
+1) Update slides
