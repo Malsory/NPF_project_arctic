@@ -1,20 +1,15 @@
 import matplotlib.pyplot as plt
-
+import seaborn as sns
 data = {
-    'SRAD':    0.251435,
-    'date':    0.174925,
-    'T':    0.136532,
-    'RH':    0.127760,
-    'P':    0.112066,
-    'SO4':    0.063107,
-    'NH3':   0.060823,
-    'SO2':    0.045826,
-    'NH4':    0.027527
+    'Solar Radiation (SRAD)':    0.369534,
+    'Temperature (T)':    0.220890,
+    'Relative Humidity (RH)':    0.191741,
+    'Pressure (P)':    0.217836
 }
 
 plt.rcParams['font.family'] = 'Times New Roman'
-plt.figure(figsize=(10, 10))
-plt.pie(data.values(), labels=data.keys(), autopct='%1.1f%%', startangle=140, colors=plt.cm.Pastel1.colors, textprops={'fontsize': 15})
-plt.title('Importance of parameters', fontsize=15)
+plt.figure(figsize=(20, 15))
+plt.pie(data.values(), labels=data.keys(), autopct='%1.1f%%', colors=sns.color_palette('Set2'), textprops={'fontsize': 30}, explode=[0.05, 0.05, 0.05, 0.05], startangle=75)
+plt.title('Importance of parameters', fontsize=50)
 plt.axis('equal')
-plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic-Updates\\png\\\pie_chart2.png', dpi=300)
+plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\png\\\pie_chart.png', dpi=300)

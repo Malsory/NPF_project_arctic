@@ -1,0 +1,60 @@
+Column: adb
+Highest Value: 0.7527
+Lowest Value: 0.6935
+Average Value: 0.7258
+
+Column: rf_adb
+Highest Value: 0.7634
+Lowest Value: 0.7043
+Average Value: 0.7392
+
+Column: rf_lr
+Highest Value: 0.8280
+Lowest Value: 0.7366
+Average Value: 0.7860
+
+Column: rf_xgb
+Highest Value: 0.8118
+Lowest Value: 0.7204
+Average Value: 0.7769
+
+Column: gbm
+Highest Value: 0.8226
+Lowest Value: 0.7312
+Average Value: 0.7909
+
+Column: knn
+Highest Value: 0.8333
+Lowest Value: 0.7312
+Average Value: 0.7914
+
+Column: lr
+Highest Value: 0.5699
+Lowest Value: 0.4892
+Average Value: 0.5199
+
+Column: mlp
+Highest Value: 0.6129
+Lowest Value: 0.5054
+Average Value: 0.5516
+
+Column: nb
+Highest Value: 0.5645
+Lowest Value: 0.4624
+Average Value: 0.5167
+
+Column: rf
+Highest Value: 0.8172
+Lowest Value: 0.7258
+Average Value: 0.7849
+
+Column: sv
+Highest Value: 0.5591
+Lowest Value: 0.4677
+Average Value: 0.5065
+
+Column: xgb
+Highest Value: 0.8602
+Lowest Value: 0.7473
+Average Value: 0.7823
+
