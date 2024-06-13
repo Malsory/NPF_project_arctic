@@ -1,0 +1,18 @@
+Test accuracy 0.8184946236559141
+Test precision 0.8184082458317649
+Test recall 0.8184946236559139
+Test roc_auc 0.9268338536246965
+Test f1 0.8182219199132638
+-------------------------------------------------------------------------------
+Train accuracy 1.0
+Train precision 1.0
+Train recall 1.0
+Train roc_auc 1.0
+Train f1 1.0
+-------------------------------------------------------------------------------
+Fold 1 - Test Accuracy: 0.8065, Test Precision: 0.8059, Test Recall: 0.8065
+Fold 2 - Test Accuracy: 0.8237, Test Precision: 0.8247, Test Recall: 0.8237
+Fold 3 - Test Accuracy: 0.8452, Test Precision: 0.8453, Test Recall: 0.8452
+Fold 4 - Test Accuracy: 0.8000, Test Precision: 0.7996, Test Recall: 0.8000
+Fold 5 - Test Accuracy: 0.8172, Test Precision: 0.8165, Test Recall: 0.8172
+-------------------------------------------------------------------------------

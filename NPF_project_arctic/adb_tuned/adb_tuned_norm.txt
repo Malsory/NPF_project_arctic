@@ -1,8 +1,8 @@
-Test accuracy 0.5851528384279476
-Test precision 0.4306437789876991
-Test recall 0.43376410872904564
-Test roc_auc 0.5782218779447962
-Test f1 0.43210209783010906
+Test accuracy 0.5996629127403662
+Test precision 0.459218600355774
+Test recall 0.4643080098455636
+Test roc_auc 0.5919902331868367
+Test f1 0.4600903531587936
 -------------------------------------------------------------------------------
 Train accuracy 1.0
 Train precision 1.0
@@ -10,12 +10,15 @@ Train recall 1.0
 Train roc_auc 1.0
 Train f1 1.0
 -------------------------------------------------------------------------------
-K-fold validation results: [0.61204013, 0.61204013, 0.61204013, 0.61204013, 0.61204013, 0.61204013,
- 0.61204013, 0.61204013, 0.61204013, 0.61204013]
+Fold 1 - Test Accuracy: 0.5502, Test Precision: 0.4122, Test Recall: 0.4281
+Fold 2 - Test Accuracy: 0.5895, Test Precision: 0.4355, Test Recall: 0.4346
+Fold 3 - Test Accuracy: 0.6419, Test Precision: 0.5282, Test Recall: 0.5402
+Fold 4 - Test Accuracy: 0.6026, Test Precision: 0.4818, Test Recall: 0.4945
+Fold 5 - Test Accuracy: 0.6140, Test Precision: 0.4384, Test Recall: 0.4242
 -------------------------------------------------------------------------------
 Feature Importance:
        Feature  Importance
-3          SWD    0.304348
-2  temperature    0.264692
-1           RH    0.217504
-0     pressure    0.213456
+3          SWD    0.364670
+2  temperature    0.237970
+1           RH    0.212255
+0     pressure    0.185105
