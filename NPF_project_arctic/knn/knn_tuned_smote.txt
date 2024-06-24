@@ -1,8 +1,8 @@
-Test accuracy 0.7698924731182796
-Test precision 0.779420643009833
-Test recall 0.7821150097465887
-Test roc_auc 0.8342265274148136
-Test f1 0.7643717374512494
+Test accuracy 0.8086021505376344
+Test precision 0.8120919669268142
+Test recall 0.8086021505376344
+Test roc_auc 0.8564516129032258
+Test f1 0.80191280138363
 -------------------------------------------------------------------------------
 Train accuracy 1.0
 Train precision 1.0
@@ -10,6 +10,9 @@ Train recall 1.0
 Train roc_auc 1.0
 Train f1 1.0
 -------------------------------------------------------------------------------
-K-fold validation results: [0.80483871, 0.76236559, 0.76397849, 0.74408602, 0.74086022, 0.72741935,
- 0.72311828, 0.71236559, 0.70376344, 0.69784946]
+Fold 1 - Test Accuracy: 0.8151, Test Precision: 0.8169, Test Recall: 0.8151
+Fold 2 - Test Accuracy: 0.8043, Test Precision: 0.8099, Test Recall: 0.8043
+Fold 3 - Test Accuracy: 0.7849, Test Precision: 0.7843, Test Recall: 0.7849
+Fold 4 - Test Accuracy: 0.8301, Test Precision: 0.8367, Test Recall: 0.8301
+Fold 5 - Test Accuracy: 0.8086, Test Precision: 0.8126, Test Recall: 0.8086
 -------------------------------------------------------------------------------
