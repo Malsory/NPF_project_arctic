@@ -1,0 +1,14 @@
+Data processing started
+Data processing done. Model generation started
+Checkpoint 0 passed
+Model generation done. Model fitting initiated
+Model fitting done. Prediction initiated
+Model predicting done
+Model saved to multi_output_model.pkl
+Checkpoint 4 passed
+Checkpoint 4.1 passed
+Checkpoint 5 passed
+Checkpoint 5.1 passed
+Checkpoint 6 passed
+Outputting done
+Mean Squared Error: 42.94857397391024
