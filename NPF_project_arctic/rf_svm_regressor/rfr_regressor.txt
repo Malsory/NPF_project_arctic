@@ -1,0 +1,18 @@
+Data processing started
+Data processing done. Model generation started
+Checkpoint 0 passed
+Random Forest model generation done. Fitting initiated.
+Random Forest model fitting done.
+SVR model generation done. Fitting initiated.
+SVR model fitting done.
+Meta-model (Linear Regression) fitting initiated.
+Meta-model fitting done.
+Final predictions using stacked model done.
+All models saved to respective files.
+Checkpoint 4 passed
+Checkpoint 4.1 passed
+Checkpoint 5 passed
+Checkpoint 5.1 passed
+Checkpoint 6 passed
+Outputting done
+Mean Squared Error: 51.83672442536886
