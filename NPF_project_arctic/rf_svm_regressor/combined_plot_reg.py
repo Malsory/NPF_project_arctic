@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.dates as mdates
 from scipy.ndimage import gaussian_filter
+import matplotlib.colors as mcolors
 
 # Function to plot contour plot given data, title, and color map
 def plot_contour(df, custom_cmap, min_date, max_date, ax, title_text, actual_min_value, actual_max_value):
@@ -20,9 +21,10 @@ def plot_contour(df, custom_cmap, min_date, max_date, ax, title_text, actual_min
     row = df.index.astype(np.float32)
 
     blurred_df = gaussian_filter(df, sigma=0.9)
+    norm = mcolors.Normalize(vmin=np.nanmin(blurred_df), vmax=np.nanmax(blurred_df))
     X, Y = np.meshgrid(date, row)
 
-    contour = ax.contourf(X, Y, blurred_df, cmap=custom_cmap, levels=200)
+    contour = ax.contourf(X, Y, blurred_df, cmap=custom_cmap, levels=200, norm=norm, extend='both')
 
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%b'))
     ax.xaxis.set_major_locator(mdates.MonthLocator())
@@ -40,7 +42,7 @@ def plot_contour(df, custom_cmap, min_date, max_date, ax, title_text, actual_min
     cbar.ax.text(5, 0.5, r'dN/dlogDp ($10^3$ cm$^{-3}$)', va='center', ha='left', rotation=90, fontsize=40, transform=cbar.ax.transAxes)
 
     cbar.ax.set_yticks([actual_min_value, actual_max_value])
-    cbar.ax.set_yticklabels(['0', int(actual_max_value/1000)])
+    cbar.ax.set_yticklabels(['0', '1'])
 
     ax.spines['top'].set_linewidth(5)
     ax.spines['bottom'].set_linewidth(5)
@@ -82,13 +84,13 @@ df_orig_predictions = df2.copy().drop(columns=['date'])
 
 # Define color map for predictions
 colors_predictions = [(0, 'blue'),
-                      (0.0598, 'powderblue'),
-                      (0.0599, 'lightblue'),
-                      (0.06, 'green'),
-                      (0.095, 'yellow'),
-                      (0.11, 'orange'),
-                      (0.2, 'red'),
-                      (0.22, 'darkred'),
+                      (0.16, 'powderblue'),
+                      (0.17, 'lightblue'),
+                      (0.2, 'green'),
+                      (0.37, 'yellow'),
+                      (0.44, 'orange'),
+                      (0.55, 'red'),
+                      (0.6, 'darkred'),
                       (1, 'maroon')]
 
 custom_cmap_predictions = LinearSegmentedColormap.from_list('custom_cmap', colors_predictions)
