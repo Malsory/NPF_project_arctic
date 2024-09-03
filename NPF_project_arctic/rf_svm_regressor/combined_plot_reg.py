@@ -39,7 +39,7 @@ def plot_contour(df, custom_cmap, min_date, max_date, ax, title_text, actual_min
     cbar = plt.colorbar(contour, ax=ax, ticks=[])
     cbar.ax.tick_params(width=5, length=50, labelsize=40)
     cbar.outline.set_linewidth(5)
-    cbar.ax.text(5, 0.5, r'dN/dlogDp ($10^3$ cm$^{-3}$)', va='center', ha='left', rotation=90, fontsize=40, transform=cbar.ax.transAxes)
+    cbar.ax.text(5, 0.5, r'dN/dlogDp ($10^3$ cm$^{-3}$)', va='center', ha='left', rotation=90, fontsize=80, transform=cbar.ax.transAxes)
 
     cbar.ax.set_yticks([actual_min_value, actual_max_value])
     cbar.ax.set_yticklabels(['0', '1'])

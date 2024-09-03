@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.dates as mdates
 from scipy.ndimage import gaussian_filter
+import matplotlib.colors as mcolors
 
 colors1 = [(0, 'blue'),
           (0.0001, 'powderblue'),
@@ -66,11 +67,11 @@ row = np.array(row)
 rounded_row = row.copy()
 
 blurred_df1 = gaussian_filter(df1, sigma=0.9)
-
+norm = mcolors.Normalize(vmin=np.nanmin(blurred_df1), vmax=np.nanmax(blurred_df1))
 X, Y = np.meshgrid(date, rounded_row)
 
 plt.figure(figsize=(200,25))
-contour = plt.contourf(X, Y, blurred_df1, cmap=custom_cmap1, levels=200)
+contour = plt.contourf(X, Y, blurred_df1, cmap=custom_cmap1, levels=200, norm=norm, extend='both')
 ax = plt.gca()
 # ax.xaxis.set_major_locator(mdates.DayLocator())
 # plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d'))
@@ -104,7 +105,7 @@ actual_min_value = df_orig.min(skipna=True).values.min()
 actual_max_value = df_orig.max(skipna=True).values.max()
 actual_max_value_print = int(actual_max_value/1000)
 cbar.ax.set_yticks([actual_min_value, actual_max_value])
-cbar.ax.set_yticklabels(['0', actual_max_value_print])
+cbar.ax.set_yticklabels(['0', '1'])
 cbar.ax.tick_params(axis='both', which='both', width=10, length=80, direction='out', pad=10)
 
 plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\rf_regressor\\y_test.png', dpi=100)
@@ -143,11 +144,11 @@ row = np.array(row)
 rounded_row = row.copy()
 
 blurred_df1 = gaussian_filter(df1, sigma=0.9)
-
+norm = mcolors.Normalize(vmin=np.nanmin(blurred_df1), vmax=np.nanmax(blurred_df1))
 X, Y = np.meshgrid(date, rounded_row)
 
 plt.figure(figsize=(200,25))
-contour = plt.contourf(X, Y, blurred_df1, cmap=custom_cmap2, levels=200)
+contour = plt.contourf(X, Y, blurred_df1, cmap=custom_cmap2, levels=200, norm=norm, extend='both')
 ax = plt.gca()
 # ax.xaxis.set_major_locator(mdates.DayLocator())
 # plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d'))
@@ -181,7 +182,7 @@ actual_min_value = df_orig.min(skipna=True).values.min()
 actual_max_value = df_orig.max(skipna=True).values.max()
 actual_max_value_print = int(actual_max_value/1000)
 cbar.ax.set_yticks([actual_min_value, actual_max_value])
-cbar.ax.set_yticklabels(['0', actual_max_value_print])
+cbar.ax.set_yticklabels(['0', '1'])
 cbar.ax.tick_params(axis='both', which='both', width=10, length=80, direction='out', pad=10)
 
 plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\rf_regressor\\predictions.png', dpi=100)
