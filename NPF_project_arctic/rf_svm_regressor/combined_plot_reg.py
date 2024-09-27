@@ -83,14 +83,24 @@ df2 = df2.drop(df2.columns[df2.columns.str.contains('Unnamed')], axis=1)
 df_orig_predictions = df2.copy().drop(columns=['date'])
 
 # Define color map for predictions
+# colors_predictions = [(0, 'blue'),
+#                       (0.16, 'powderblue'),
+#                       (0.17, 'lightblue'),
+#                       (0.2, 'green'),
+#                       (0.37, 'yellow'),
+#                       (0.44, 'orange'),
+#                       (0.55, 'red'),
+#                       (0.6, 'darkred'),
+#                       (1, 'maroon')]
+
 colors_predictions = [(0, 'blue'),
                       (0.16, 'powderblue'),
                       (0.17, 'lightblue'),
                       (0.2, 'green'),
                       (0.37, 'yellow'),
-                      (0.44, 'orange'),
-                      (0.55, 'red'),
-                      (0.6, 'darkred'),
+                      (0.38, 'orange'),
+                      (0.4, 'red'),
+                      (0.5, 'darkred'),
                       (1, 'maroon')]
 
 custom_cmap_predictions = LinearSegmentedColormap.from_list('custom_cmap', colors_predictions)

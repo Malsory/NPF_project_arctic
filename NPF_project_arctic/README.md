@@ -7,16 +7,14 @@ This document provides detailed documentation about the code and file management
 - Folders in 'NPF_project_arctic' are split into multiple groups based on their functions. There are 3 types of folders: 1) ML algorithm folders, 2) data preprocessing/table making code folders, and 3) image storage.
 
 1.1. ML algorithm folders
-- ML algorithm folders function as a separate units not dependant on each other or other folders. Codes are stored in the form of iipynb files. Input data is stored in the form of .csv file in each folder, and is called 'output_combined'.
+- ML algorithm folders function as a separate units not dependant on each other or other folders. Most codes are stored in the form of ipynb files. Input data is stored in the form of .csv file in each folder, and is called 'output_combined'.
 
 - Note: if new input data is obtained, please replace 'output_combined' file in each folder. 
 - Note: if new data is obtained, make sure that column names are have exactly the same names as 'output_combined' file. Order of columns is not important. 
 - Note: make sure that data in 'day.type' column is 'Non', 'undefined', and 'NPF'.
 
-- 'code_dump' .ipynb file hold old versions/extra lines of code. Do not run 'code_dump'.
-- '{model name}_{regular/tuned}_norm' file hold information about trained model results on raw data (so called as-it-is input). 
-- '{model name}_{regular/tuned}_smote' file hold information about trained model results on modified data (with usage of SMOTE, check https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html for more details).
-- 'test1_{model name}_{regular/tuned}' file hold information about trained model results on 'weighted' data. Note: class weighting is not available for all models (weighting of minority classes, check sklearn models' documentation for more details).
+- '{model name}_tuned_norm' file hold information about trained model results on raw data (so called as-it-is input). 
+- '{model name}_tuned_smote' file hold information about trained model results on modified data (with usage of SMOTE, check https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html for more details).
 
 - All result files are stored locally in the folder.
 

@@ -56,11 +56,11 @@ df1 = df1.drop(df1.columns[df1.columns.str.contains('Unnamed')], axis=1)
 
 df_orig_y_test = df1.copy().drop(columns=['date'])
 
-# min_date = pd.to_datetime('2019-01-01')
-# max_date = pd.to_datetime('2020-01-01')
+min_date = pd.to_datetime('2019-01-01')
+max_date = pd.to_datetime('2020-01-01')
 
-min_date = pd.to_datetime('2019-06-01')
-max_date = pd.to_datetime('2019-09-01')
+# min_date = pd.to_datetime('2019-06-01')
+# max_date = pd.to_datetime('2019-09-01')
 
 # Define color map
 colors_y_test = [(0, 'blue'),

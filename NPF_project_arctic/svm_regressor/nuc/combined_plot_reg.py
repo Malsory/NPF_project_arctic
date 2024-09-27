@@ -33,8 +33,8 @@ def plot_contour(df, custom_cmap, min_date, max_date, ax, title_text, actual_min
     ax.set_yscale('log')
     ax.set_title(title_text, fontsize=40, pad=30)
     ax.tick_params(axis='both', which='both', width=5, length=40, direction='out', pad=5)
-    ax.set_yticks([10.2, 30, 59.4])
-    ax.set_yticklabels(['10', '30', '60'])
+    ax.set_yticks([10.2, 20, 25])
+    ax.set_yticklabels(['10', '20', '25'])
     
     cbar = plt.colorbar(contour, ax=ax, ticks=[])
     cbar.ax.tick_params(width=5, length=50, labelsize=40)
@@ -50,17 +50,17 @@ def plot_contour(df, custom_cmap, min_date, max_date, ax, title_text, actual_min
     ax.spines['right'].set_linewidth(5)
 
 # Load and process y_test data
-df1 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\svm_regressor\\y_test_df.csv')
+df1 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\svm_regressor\\nuc\\y_test_df.csv')
 df1['date'] = pd.to_datetime(df1['date'])
 df1 = df1.drop(df1.columns[df1.columns.str.contains('Unnamed')], axis=1)
 
 df_orig_y_test = df1.copy().drop(columns=['date'])
 
-min_date = pd.to_datetime('2019-01-01')
-max_date = pd.to_datetime('2020-01-01')
+# min_date = pd.to_datetime('2019-01-01')
+# max_date = pd.to_datetime('2020-01-01')
 
-# min_date = pd.to_datetime('2019-06-01')
-# max_date = pd.to_datetime('2019-09-01')
+min_date = pd.to_datetime('2019-06-01')
+max_date = pd.to_datetime('2019-09-01')
 
 # Define color map
 colors_y_test = [(0, 'blue'),
@@ -75,22 +75,33 @@ colors_y_test = [(0, 'blue'),
 custom_cmap_y_test = LinearSegmentedColormap.from_list('custom_cmap', colors_y_test)
 
 # Load and process predictions data
-df2 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\svm_regressor\\predictions_df.csv')
+df2 = pd.read_csv(r'C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\svm_regressor\\nuc\\predictions_df.csv')
 df2['date'] = pd.to_datetime(df2['date'])
 df2 = df2.drop(df2.columns[df2.columns.str.contains('Unnamed')], axis=1)
 
 df_orig_predictions = df2.copy().drop(columns=['date'])
 
 # Define color map for predictions
+# colors_predictions = [(0, 'blue'),
+#                       (0.16, 'powderblue'),
+#                       (0.17, 'lightblue'),
+#                       (0.2, 'green'),
+#                       (0.37, 'yellow'),
+#                       (0.44, 'orange'),
+#                       (0.55, 'red'),
+#                       (0.6, 'darkred'),
+#                       (1, 'maroon')]
+
 colors_predictions = [(0, 'blue'),
-                      (0.16, 'powderblue'),
-                      (0.17, 'lightblue'),
-                      (0.2, 'green'),
-                      (0.37, 'yellow'),
-                      (0.44, 'orange'),
-                      (0.55, 'red'),
-                      (0.6, 'darkred'),
-                      (1, 'maroon')]
+          (0.0598, 'powderblue'),
+          (0.0599, 'lightblue'),
+          (0.1, 'green'),
+          (0.2, 'yellow'),
+          (0.3, 'orange'),
+          (0.4, 'red'),
+          (0.5, 'darkred'),
+          (1, 'maroon')]
+
 custom_cmap_predictions = LinearSegmentedColormap.from_list('custom_cmap', colors_predictions)
 
 # Create a figure with two subplots
@@ -99,7 +110,7 @@ fig, axes = plt.subplots(nrows=2, figsize=(200, 50))
 # Plot the y_test data (top subplot)
 actual_min_value_y_test = df_orig_y_test.min(skipna=True).values.min()
 actual_max_value_y_test = df_orig_y_test.max(skipna=True).values.max()
-title_text_y_test = f'{min_date.strftime("%Y-%m-%d")} to {max_date.strftime("%Y-%m-%d")} Test plot {" " * 193}Range : 10 - 60 nm'
+title_text_y_test = f'{min_date.strftime("%Y-%m-%d")} to {max_date.strftime("%Y-%m-%d")} Test plot {" " * 193}Range : 10 - 25 nm'
 plot_contour(df1, custom_cmap_y_test, min_date, max_date, axes[0], title_text_y_test, actual_min_value_y_test, actual_max_value_y_test)
 
 axes[0].set_title(title_text_y_test, fontsize=100, pad=60)
@@ -109,7 +120,7 @@ axes[0].tick_params(axis='y', labelsize=100)
 # Plot the predictions data (bottom subplot)
 actual_min_value_predictions = df_orig_predictions.min(skipna=True).values.min()
 actual_max_value_predictions = df_orig_predictions.max(skipna=True).values.max()
-title_text_predictions = f'{min_date.strftime("%Y-%m-%d")} to {max_date.strftime("%Y-%m-%d")} Predictions plot {" " * 183}Range : 10 - 60 nm'
+title_text_predictions = f'{min_date.strftime("%Y-%m-%d")} to {max_date.strftime("%Y-%m-%d")} Predictions plot {" " * 183}Range : 10 - 25 nm'
 plot_contour(df2, custom_cmap_predictions, min_date, max_date, axes[1], title_text_predictions, actual_min_value_predictions, actual_max_value_predictions)
 
 axes[1].set_title(title_text_predictions, fontsize=100, pad=60)
@@ -119,4 +130,4 @@ axes[1].tick_params(axis='y', labelsize=100)
 plt.subplots_adjust(hspace=0.5)
 
 # Save and show the final plot
-plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\svm_regressor\\combined_plot.png', dpi=100)
+plt.savefig('C:\\Users\\Masloriy\\Desktop\\NPF_project_arctic\\NPF_project_arctic\\svm_regressor\\nuc\\combined_plot.png', dpi=100)
